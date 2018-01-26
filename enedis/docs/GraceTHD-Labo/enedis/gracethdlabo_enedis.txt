@@ -1,0 +1,10 @@
+GraceTHD-Labo/Enedis
+
+Fonctionnement : 
+- Vous pouvez exécuter ce script SQL ou l'insérer dans votre fichier gracethd_90_labo.sql afin qu'il soit exécuté par GraceTHD-Check.  
+- Une vue vs_wk_enedis_appui_rec sera créée. Vous pouvez l'exploiter avec vos outils SIG classiques pour exporter en shapefile comme souhaité par Enedis. 
+- Le script recherche les propriétaires d'appuis correspondant aux valeurs or_nom 'ENEDIS', 'ERDF' ou 'AODE'. 
+
+Pour plus d'infos : 
+https://redmine.gracethd.org/redmine/issues/429
+
