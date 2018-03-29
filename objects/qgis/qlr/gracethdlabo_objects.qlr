@@ -1,0 +1,2125 @@
+<!DOCTYPE qgis-layer-definition>
+<qlr>
+  <layer-tree-group expanded="1" checked="Qt::Unchecked" name="">
+    <customproperties/>
+    <layer-tree-group expanded="1" checked="Qt::Unchecked" name="Objets calculés">
+      <customproperties/>
+      <layer-tree-group expanded="1" checked="Qt::Unchecked" name="Itinéraires calculés">
+        <customproperties/>
+        <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Unchecked" id="vs_obj_it20180312225436911" source="dbname='gracethd20ct' host=localhost port=5432 user='postgres' sslmode=disable key='it_cddispo' table=&quot;gracethd&quot;.&quot;vs_obj_it&quot; (it_geom) sql=" name="Itinéraires (vs_obj_it)">
+          <customproperties/>
+        </layer-tree-layer>
+        <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Unchecked" id="v_obj_it_cm20180312230721010" source="dbname='gracethd20ct' host=localhost port=5432 user='postgres' sslmode=disable key='cm_code' table=&quot;gracethd&quot;.&quot;v_obj_it_cm&quot; sql=" name="Relations itinéraires cheminements (v_obj_it_cm)">
+          <customproperties/>
+        </layer-tree-layer>
+      </layer-tree-group>
+      <layer-tree-group expanded="1" checked="Qt::Unchecked" name="Conduites calculées">
+        <customproperties/>
+        <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Unchecked" id="vs_in_1_cm0cd20180312230430283" source="dbname='gracethd20ct' host=localhost port=5432 user='postgres' sslmode=disable key='cm_code' srid=2154 type=LineString table=&quot;gracethd&quot;.&quot;vs_in_1_cm0cd&quot; (geom) sql=" name="Cheminements sans conduites (vs_in_1_cm0cd)">
+          <customproperties/>
+        </layer-tree-layer>
+        <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Unchecked" id="vs_obj_cd20180312152602342" source="dbname='gracethd20ct' host=localhost port=5432 user='postgres' sslmode=disable key='cd_code' srid=2154 type=LineString table=&quot;gracethd&quot;.&quot;vs_obj_cd&quot; (cd_geom) sql=" name="Conduites générées (vs_obj_cd)">
+          <customproperties/>
+        </layer-tree-layer>
+      </layer-tree-group>
+      <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Unchecked" id="v_obj_ba20180312163920613" source="dbname='gracethd20ct' host=localhost port=5432 user='postgres' sslmode=disable key='et_code' table=&quot;gracethd&quot;.&quot;v_obj_ba&quot; sql=" name="Plans de baies (v_obj_ba)">
+        <customproperties/>
+      </layer-tree-layer>
+      <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Unchecked" id="v_obj_ps20180312145442030" source="dbname='gracethd20ct' host=localhost port=5432 user='postgres' sslmode=disable key='ps_code' table=&quot;gracethd&quot;.&quot;v_obj_ps&quot; sql=" name="Plans de boites (v_obj_ps)">
+        <customproperties/>
+      </layer-tree-layer>
+    </layer-tree-group>
+  </layer-tree-group>
+  <maplayers>
+    <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Line" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+      <id>vs_obj_it20180312225436911</id>
+      <datasource>dbname='gracethd20ct' host=localhost port=5432 user='postgres' sslmode=disable key='it_cddispo' table="gracethd"."vs_obj_it" (it_geom) sql=</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>Itinéraires (vs_obj_it)</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=lcc +lat_1=49 +lat_2=44 +lat_0=46.5 +lon_0=3 +x_0=700000 +y_0=6600000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</proj4>
+          <srsid>145</srsid>
+          <srid>2154</srid>
+          <authid>EPSG:2154</authid>
+          <description>RGF93 / Lambert-93</description>
+          <projectionacronym>lcc</projectionacronym>
+          <ellipsoidacronym>GRS80</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <provider encoding="UTF-8">postgres</provider>
+      <vectorjoins/>
+      <layerDependencies/>
+      <expressionfields/>
+      <map-layer-style-manager current="">
+        <map-layer-style name=""/>
+      </map-layer-style-manager>
+      <edittypes>
+        <edittype widgetv2type="TextEdit" name="it_id">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="it_ndcode1">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="it_ndcode2">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="it_r1_code">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="it_r2_code">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="it_r3_code">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="it_statut">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="it_typ_imp">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="it_cddispo">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="it_fo_util">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="it_long">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="it_lgreel">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="it_lggeom">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="it_nb_cm">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="it_isvalid">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="it_geomtyp">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+      </edittypes>
+      <renderer-v2 forceraster="0" symbollevels="0" type="singleSymbol" enableorderby="0">
+        <symbols>
+          <symbol alpha="1" clip_to_extent="1" type="line" name="0">
+            <layer pass="0" class="SimpleLine" locked="0">
+              <prop k="capstyle" v="square"/>
+              <prop k="customdash" v="5;2"/>
+              <prop k="customdash_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="customdash_unit" v="MM"/>
+              <prop k="draw_inside_polygon" v="0"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="line_color" v="159,20,29,255"/>
+              <prop k="line_style" v="solid"/>
+              <prop k="line_width" v="0.26"/>
+              <prop k="line_width_unit" v="MM"/>
+              <prop k="offset" v="0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="use_custom_dash" v="0"/>
+              <prop k="width_map_unit_scale" v="0,0,0,0,0,0"/>
+            </layer>
+          </symbol>
+        </symbols>
+        <rotation/>
+        <sizescale scalemethod="diameter"/>
+      </renderer-v2>
+      <labeling type="simple"/>
+      <customproperties/>
+      <blendMode>0</blendMode>
+      <featureBlendMode>0</featureBlendMode>
+      <layerTransparency>0</layerTransparency>
+      <displayfield>it_id</displayfield>
+      <label>0</label>
+      <labelattributes>
+        <label fieldname="" text="Étiquette"/>
+        <family fieldname="" name="MS Shell Dlg 2"/>
+        <size fieldname="" units="pt" value="12"/>
+        <bold fieldname="" on="0"/>
+        <italic fieldname="" on="0"/>
+        <underline fieldname="" on="0"/>
+        <strikeout fieldname="" on="0"/>
+        <color fieldname="" red="0" blue="0" green="0"/>
+        <x fieldname=""/>
+        <y fieldname=""/>
+        <offset x="0" y="0" units="pt" yfieldname="" xfieldname=""/>
+        <angle fieldname="" value="0" auto="0"/>
+        <alignment fieldname="" value="center"/>
+        <buffercolor fieldname="" red="255" blue="255" green="255"/>
+        <buffersize fieldname="" units="pt" value="1"/>
+        <bufferenabled fieldname="" on=""/>
+        <multilineenabled fieldname="" on=""/>
+        <selectedonly on=""/>
+      </labelattributes>
+      <annotationform></annotationform>
+      <aliases>
+        <alias field="it_id" index="0" name=""/>
+        <alias field="it_ndcode1" index="1" name=""/>
+        <alias field="it_ndcode2" index="2" name=""/>
+        <alias field="it_r1_code" index="3" name=""/>
+        <alias field="it_r2_code" index="4" name=""/>
+        <alias field="it_r3_code" index="5" name=""/>
+        <alias field="it_statut" index="6" name=""/>
+        <alias field="it_typ_imp" index="7" name=""/>
+        <alias field="it_cddispo" index="8" name=""/>
+        <alias field="it_fo_util" index="9" name=""/>
+        <alias field="it_long" index="10" name=""/>
+        <alias field="it_lgreel" index="11" name=""/>
+        <alias field="it_lggeom" index="12" name=""/>
+        <alias field="it_nb_cm" index="13" name=""/>
+        <alias field="it_isvalid" index="14" name=""/>
+        <alias field="it_geomtyp" index="15" name=""/>
+      </aliases>
+      <excludeAttributesWMS/>
+      <excludeAttributesWFS/>
+      <attributeactions default="-1"/>
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
+        <columns/>
+      </attributetableconfig>
+      <editform></editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath></editforminitfilepath>
+      <editforminitcode><![CDATA[]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <widgets/>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+      <defaults>
+        <default field="it_id" expression=""/>
+        <default field="it_ndcode1" expression=""/>
+        <default field="it_ndcode2" expression=""/>
+        <default field="it_r1_code" expression=""/>
+        <default field="it_r2_code" expression=""/>
+        <default field="it_r3_code" expression=""/>
+        <default field="it_statut" expression=""/>
+        <default field="it_typ_imp" expression=""/>
+        <default field="it_cddispo" expression=""/>
+        <default field="it_fo_util" expression=""/>
+        <default field="it_long" expression=""/>
+        <default field="it_lgreel" expression=""/>
+        <default field="it_lggeom" expression=""/>
+        <default field="it_nb_cm" expression=""/>
+        <default field="it_isvalid" expression=""/>
+        <default field="it_geomtyp" expression=""/>
+      </defaults>
+      <previewExpression></previewExpression>
+    </maplayer>
+    <maplayer minimumScale="0" maximumScale="1e+08" readOnly="0" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
+      <id>v_obj_it_cm20180312230721010</id>
+      <datasource>dbname='gracethd20ct' host=localhost port=5432 user='postgres' sslmode=disable key='cm_code' table="gracethd"."v_obj_it_cm" sql=</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>Relations itinéraires cheminements (v_obj_it_cm)</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+          <srsid>3452</srsid>
+          <srid>4326</srid>
+          <authid>EPSG:4326</authid>
+          <description>WGS 84</description>
+          <projectionacronym>longlat</projectionacronym>
+          <ellipsoidacronym>WGS84</ellipsoidacronym>
+          <geographicflag>true</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <customproperties/>
+      <provider encoding="UTF-8">postgres</provider>
+      <vectorjoins/>
+      <layerDependencies/>
+      <expressionfields/>
+      <map-layer-style-manager current="">
+        <map-layer-style name=""/>
+      </map-layer-style-manager>
+      <edittypes>
+        <edittype widgetv2type="TextEdit" name="it_id">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="cm_code">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+      </edittypes>
+      <annotationform></annotationform>
+      <aliases>
+        <alias field="it_id" index="0" name=""/>
+        <alias field="cm_code" index="1" name=""/>
+      </aliases>
+      <excludeAttributesWMS/>
+      <excludeAttributesWFS/>
+      <attributeactions default="-1"/>
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="1551796960">
+        <columns/>
+      </attributetableconfig>
+      <editform></editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath></editforminitfilepath>
+      <editforminitcode><![CDATA[]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <widgets/>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+      <defaults>
+        <default field="it_id" expression=""/>
+        <default field="cm_code" expression=""/>
+      </defaults>
+      <previewExpression></previewExpression>
+    </maplayer>
+    <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Line" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+      <id>vs_in_1_cm0cd20180312230430283</id>
+      <datasource>dbname='gracethd20ct' host=localhost port=5432 user='postgres' sslmode=disable key='cm_code' srid=2154 type=LineString table="gracethd"."vs_in_1_cm0cd" (geom) sql=</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>Cheminements sans conduites (vs_in_1_cm0cd)</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=lcc +lat_1=49 +lat_2=44 +lat_0=46.5 +lon_0=3 +x_0=700000 +y_0=6600000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</proj4>
+          <srsid>145</srsid>
+          <srid>2154</srid>
+          <authid>EPSG:2154</authid>
+          <description>RGF93 / Lambert-93</description>
+          <projectionacronym>lcc</projectionacronym>
+          <ellipsoidacronym>GRS80</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <provider encoding="UTF-8">postgres</provider>
+      <vectorjoins/>
+      <layerDependencies/>
+      <expressionfields/>
+      <map-layer-style-manager current="">
+        <map-layer-style name=""/>
+      </map-layer-style-manager>
+      <edittypes>
+        <edittype widgetv2type="TextEdit" name="cm_code">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="cm_codeext">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="cm_ndcode1">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="cm_ndcode2">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="cm_cm1">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="cm_cm2">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="cm_r1_code">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="cm_r2_code">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="cm_r3_code">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="cm_r4_code">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="cm_voie">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="cm_gest_do">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="cm_prop_do">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="cm_statut">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="cm_etat">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="cm_datcons">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="cm_datemes">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="cm_avct">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="cm_typelog">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="cm_typ_imp">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="cm_nature">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="cm_compo">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="cm_cddispo">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="cm_fo_util">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="cm_mod_pos">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="cm_passage">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="cm_revet">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="cm_remblai">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="cm_charge">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="cm_larg">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="cm_fildtec">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="cm_mut_org">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="cm_long">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="cm_lgreel">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="cm_comment">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="cm_dtclass">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="cm_geolqlt">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="cm_geolmod">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="cm_geolsrc">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="cm_creadat">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="cm_majdate">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="cm_majsrc">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="cm_abddate">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="cm_abdsrc">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="dm_cd_code">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="dm_cm_code">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="dm_creadat">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="dm_majdate">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="dm_majsrc">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="dm_abddate">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="dm_abdsrc">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="cd_code">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="cd_codeext">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="cd_etiquet">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="cd_cd_code">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="cd_r1_code">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="cd_r2_code">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="cd_r3_code">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="cd_r4_code">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="cd_prop">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="cd_gest">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="cd_user">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="cd_proptyp">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="cd_statut">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="cd_etat">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="cd_dateaig">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="cd_dateman">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="cd_datemes">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="cd_avct">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="cd_type">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="cd_dia_int">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="cd_dia_ext">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="cd_color">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="cd_long">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="cd_nbcable">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="cd_occup">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="cd_comment">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="cd_creadat">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="cd_majdate">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="cd_majsrc">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="cd_abddate">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="cd_abdsrc">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+      </edittypes>
+      <renderer-v2 forceraster="0" symbollevels="0" type="singleSymbol" enableorderby="0">
+        <symbols>
+          <symbol alpha="1" clip_to_extent="1" type="line" name="0">
+            <layer pass="0" class="SimpleLine" locked="0">
+              <prop k="capstyle" v="square"/>
+              <prop k="customdash" v="5;2"/>
+              <prop k="customdash_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="customdash_unit" v="MM"/>
+              <prop k="draw_inside_polygon" v="0"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="line_color" v="235,160,127,255"/>
+              <prop k="line_style" v="solid"/>
+              <prop k="line_width" v="0.26"/>
+              <prop k="line_width_unit" v="MM"/>
+              <prop k="offset" v="0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="use_custom_dash" v="0"/>
+              <prop k="width_map_unit_scale" v="0,0,0,0,0,0"/>
+            </layer>
+          </symbol>
+        </symbols>
+        <rotation/>
+        <sizescale scalemethod="diameter"/>
+      </renderer-v2>
+      <labeling type="simple"/>
+      <customproperties/>
+      <blendMode>0</blendMode>
+      <featureBlendMode>0</featureBlendMode>
+      <layerTransparency>0</layerTransparency>
+      <displayfield>cm_code</displayfield>
+      <label>0</label>
+      <labelattributes>
+        <label fieldname="" text="Étiquette"/>
+        <family fieldname="" name="MS Shell Dlg 2"/>
+        <size fieldname="" units="pt" value="12"/>
+        <bold fieldname="" on="0"/>
+        <italic fieldname="" on="0"/>
+        <underline fieldname="" on="0"/>
+        <strikeout fieldname="" on="0"/>
+        <color fieldname="" red="0" blue="0" green="0"/>
+        <x fieldname=""/>
+        <y fieldname=""/>
+        <offset x="0" y="0" units="pt" yfieldname="" xfieldname=""/>
+        <angle fieldname="" value="0" auto="0"/>
+        <alignment fieldname="" value="center"/>
+        <buffercolor fieldname="" red="255" blue="255" green="255"/>
+        <buffersize fieldname="" units="pt" value="1"/>
+        <bufferenabled fieldname="" on=""/>
+        <multilineenabled fieldname="" on=""/>
+        <selectedonly on=""/>
+      </labelattributes>
+      <annotationform></annotationform>
+      <aliases>
+        <alias field="cm_code" index="0" name=""/>
+        <alias field="cm_codeext" index="1" name=""/>
+        <alias field="cm_ndcode1" index="2" name=""/>
+        <alias field="cm_ndcode2" index="3" name=""/>
+        <alias field="cm_cm1" index="4" name=""/>
+        <alias field="cm_cm2" index="5" name=""/>
+        <alias field="cm_r1_code" index="6" name=""/>
+        <alias field="cm_r2_code" index="7" name=""/>
+        <alias field="cm_r3_code" index="8" name=""/>
+        <alias field="cm_r4_code" index="9" name=""/>
+        <alias field="cm_voie" index="10" name=""/>
+        <alias field="cm_gest_do" index="11" name=""/>
+        <alias field="cm_prop_do" index="12" name=""/>
+        <alias field="cm_statut" index="13" name=""/>
+        <alias field="cm_etat" index="14" name=""/>
+        <alias field="cm_datcons" index="15" name=""/>
+        <alias field="cm_datemes" index="16" name=""/>
+        <alias field="cm_avct" index="17" name=""/>
+        <alias field="cm_typelog" index="18" name=""/>
+        <alias field="cm_typ_imp" index="19" name=""/>
+        <alias field="cm_nature" index="20" name=""/>
+        <alias field="cm_compo" index="21" name=""/>
+        <alias field="cm_cddispo" index="22" name=""/>
+        <alias field="cm_fo_util" index="23" name=""/>
+        <alias field="cm_mod_pos" index="24" name=""/>
+        <alias field="cm_passage" index="25" name=""/>
+        <alias field="cm_revet" index="26" name=""/>
+        <alias field="cm_remblai" index="27" name=""/>
+        <alias field="cm_charge" index="28" name=""/>
+        <alias field="cm_larg" index="29" name=""/>
+        <alias field="cm_fildtec" index="30" name=""/>
+        <alias field="cm_mut_org" index="31" name=""/>
+        <alias field="cm_long" index="32" name=""/>
+        <alias field="cm_lgreel" index="33" name=""/>
+        <alias field="cm_comment" index="34" name=""/>
+        <alias field="cm_dtclass" index="35" name=""/>
+        <alias field="cm_geolqlt" index="36" name=""/>
+        <alias field="cm_geolmod" index="37" name=""/>
+        <alias field="cm_geolsrc" index="38" name=""/>
+        <alias field="cm_creadat" index="39" name=""/>
+        <alias field="cm_majdate" index="40" name=""/>
+        <alias field="cm_majsrc" index="41" name=""/>
+        <alias field="cm_abddate" index="42" name=""/>
+        <alias field="cm_abdsrc" index="43" name=""/>
+        <alias field="dm_cd_code" index="44" name=""/>
+        <alias field="dm_cm_code" index="45" name=""/>
+        <alias field="dm_creadat" index="46" name=""/>
+        <alias field="dm_majdate" index="47" name=""/>
+        <alias field="dm_majsrc" index="48" name=""/>
+        <alias field="dm_abddate" index="49" name=""/>
+        <alias field="dm_abdsrc" index="50" name=""/>
+        <alias field="cd_code" index="51" name=""/>
+        <alias field="cd_codeext" index="52" name=""/>
+        <alias field="cd_etiquet" index="53" name=""/>
+        <alias field="cd_cd_code" index="54" name=""/>
+        <alias field="cd_r1_code" index="55" name=""/>
+        <alias field="cd_r2_code" index="56" name=""/>
+        <alias field="cd_r3_code" index="57" name=""/>
+        <alias field="cd_r4_code" index="58" name=""/>
+        <alias field="cd_prop" index="59" name=""/>
+        <alias field="cd_gest" index="60" name=""/>
+        <alias field="cd_user" index="61" name=""/>
+        <alias field="cd_proptyp" index="62" name=""/>
+        <alias field="cd_statut" index="63" name=""/>
+        <alias field="cd_etat" index="64" name=""/>
+        <alias field="cd_dateaig" index="65" name=""/>
+        <alias field="cd_dateman" index="66" name=""/>
+        <alias field="cd_datemes" index="67" name=""/>
+        <alias field="cd_avct" index="68" name=""/>
+        <alias field="cd_type" index="69" name=""/>
+        <alias field="cd_dia_int" index="70" name=""/>
+        <alias field="cd_dia_ext" index="71" name=""/>
+        <alias field="cd_color" index="72" name=""/>
+        <alias field="cd_long" index="73" name=""/>
+        <alias field="cd_nbcable" index="74" name=""/>
+        <alias field="cd_occup" index="75" name=""/>
+        <alias field="cd_comment" index="76" name=""/>
+        <alias field="cd_creadat" index="77" name=""/>
+        <alias field="cd_majdate" index="78" name=""/>
+        <alias field="cd_majsrc" index="79" name=""/>
+        <alias field="cd_abddate" index="80" name=""/>
+        <alias field="cd_abdsrc" index="81" name=""/>
+      </aliases>
+      <excludeAttributesWMS/>
+      <excludeAttributesWFS/>
+      <attributeactions default="-1"/>
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="-458752">
+        <columns>
+          <column width="-1" hidden="0" type="field" name="cm_code"/>
+          <column width="-1" hidden="0" type="field" name="cm_codeext"/>
+          <column width="-1" hidden="0" type="field" name="cm_ndcode1"/>
+          <column width="-1" hidden="0" type="field" name="cm_ndcode2"/>
+          <column width="-1" hidden="0" type="field" name="cm_cm1"/>
+          <column width="-1" hidden="0" type="field" name="cm_cm2"/>
+          <column width="-1" hidden="0" type="field" name="cm_r1_code"/>
+          <column width="-1" hidden="0" type="field" name="cm_r2_code"/>
+          <column width="-1" hidden="0" type="field" name="cm_r3_code"/>
+          <column width="-1" hidden="0" type="field" name="cm_r4_code"/>
+          <column width="-1" hidden="0" type="field" name="cm_voie"/>
+          <column width="-1" hidden="0" type="field" name="cm_gest_do"/>
+          <column width="-1" hidden="0" type="field" name="cm_prop_do"/>
+          <column width="-1" hidden="0" type="field" name="cm_statut"/>
+          <column width="-1" hidden="0" type="field" name="cm_etat"/>
+          <column width="-1" hidden="0" type="field" name="cm_datcons"/>
+          <column width="-1" hidden="0" type="field" name="cm_datemes"/>
+          <column width="-1" hidden="0" type="field" name="cm_avct"/>
+          <column width="-1" hidden="0" type="field" name="cm_typelog"/>
+          <column width="-1" hidden="0" type="field" name="cm_typ_imp"/>
+          <column width="-1" hidden="0" type="field" name="cm_nature"/>
+          <column width="-1" hidden="0" type="field" name="cm_compo"/>
+          <column width="-1" hidden="0" type="field" name="cm_cddispo"/>
+          <column width="-1" hidden="0" type="field" name="cm_fo_util"/>
+          <column width="-1" hidden="0" type="field" name="cm_mod_pos"/>
+          <column width="-1" hidden="0" type="field" name="cm_passage"/>
+          <column width="-1" hidden="0" type="field" name="cm_revet"/>
+          <column width="-1" hidden="0" type="field" name="cm_remblai"/>
+          <column width="-1" hidden="0" type="field" name="cm_charge"/>
+          <column width="-1" hidden="0" type="field" name="cm_larg"/>
+          <column width="-1" hidden="0" type="field" name="cm_fildtec"/>
+          <column width="-1" hidden="0" type="field" name="cm_mut_org"/>
+          <column width="-1" hidden="0" type="field" name="cm_long"/>
+          <column width="-1" hidden="0" type="field" name="cm_lgreel"/>
+          <column width="-1" hidden="0" type="field" name="cm_comment"/>
+          <column width="-1" hidden="0" type="field" name="cm_dtclass"/>
+          <column width="-1" hidden="0" type="field" name="cm_geolqlt"/>
+          <column width="-1" hidden="0" type="field" name="cm_geolmod"/>
+          <column width="-1" hidden="0" type="field" name="cm_geolsrc"/>
+          <column width="-1" hidden="0" type="field" name="cm_creadat"/>
+          <column width="-1" hidden="0" type="field" name="cm_majdate"/>
+          <column width="-1" hidden="0" type="field" name="cm_majsrc"/>
+          <column width="-1" hidden="0" type="field" name="cm_abddate"/>
+          <column width="-1" hidden="0" type="field" name="cm_abdsrc"/>
+          <column width="-1" hidden="0" type="field" name="dm_cd_code"/>
+          <column width="-1" hidden="0" type="field" name="dm_cm_code"/>
+          <column width="-1" hidden="0" type="field" name="dm_creadat"/>
+          <column width="-1" hidden="0" type="field" name="dm_majdate"/>
+          <column width="-1" hidden="0" type="field" name="dm_majsrc"/>
+          <column width="-1" hidden="0" type="field" name="dm_abddate"/>
+          <column width="-1" hidden="0" type="field" name="dm_abdsrc"/>
+          <column width="-1" hidden="0" type="field" name="cd_code"/>
+          <column width="-1" hidden="0" type="field" name="cd_codeext"/>
+          <column width="-1" hidden="0" type="field" name="cd_etiquet"/>
+          <column width="-1" hidden="0" type="field" name="cd_cd_code"/>
+          <column width="-1" hidden="0" type="field" name="cd_r1_code"/>
+          <column width="-1" hidden="0" type="field" name="cd_r2_code"/>
+          <column width="-1" hidden="0" type="field" name="cd_r3_code"/>
+          <column width="-1" hidden="0" type="field" name="cd_r4_code"/>
+          <column width="-1" hidden="0" type="field" name="cd_prop"/>
+          <column width="-1" hidden="0" type="field" name="cd_gest"/>
+          <column width="-1" hidden="0" type="field" name="cd_user"/>
+          <column width="-1" hidden="0" type="field" name="cd_proptyp"/>
+          <column width="-1" hidden="0" type="field" name="cd_statut"/>
+          <column width="-1" hidden="0" type="field" name="cd_etat"/>
+          <column width="-1" hidden="0" type="field" name="cd_dateaig"/>
+          <column width="-1" hidden="0" type="field" name="cd_dateman"/>
+          <column width="-1" hidden="0" type="field" name="cd_datemes"/>
+          <column width="-1" hidden="0" type="field" name="cd_avct"/>
+          <column width="-1" hidden="0" type="field" name="cd_type"/>
+          <column width="-1" hidden="0" type="field" name="cd_dia_int"/>
+          <column width="-1" hidden="0" type="field" name="cd_dia_ext"/>
+          <column width="-1" hidden="0" type="field" name="cd_color"/>
+          <column width="-1" hidden="0" type="field" name="cd_long"/>
+          <column width="-1" hidden="0" type="field" name="cd_nbcable"/>
+          <column width="-1" hidden="0" type="field" name="cd_occup"/>
+          <column width="-1" hidden="0" type="field" name="cd_comment"/>
+          <column width="-1" hidden="0" type="field" name="cd_creadat"/>
+          <column width="-1" hidden="0" type="field" name="cd_majdate"/>
+          <column width="-1" hidden="0" type="field" name="cd_majsrc"/>
+          <column width="-1" hidden="0" type="field" name="cd_abddate"/>
+          <column width="-1" hidden="0" type="field" name="cd_abdsrc"/>
+          <column width="-1" hidden="1" type="actions"/>
+        </columns>
+      </attributetableconfig>
+      <editform></editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath></editforminitfilepath>
+      <editforminitcode><![CDATA[]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <widgets/>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+      <defaults>
+        <default field="cm_code" expression=""/>
+        <default field="cm_codeext" expression=""/>
+        <default field="cm_ndcode1" expression=""/>
+        <default field="cm_ndcode2" expression=""/>
+        <default field="cm_cm1" expression=""/>
+        <default field="cm_cm2" expression=""/>
+        <default field="cm_r1_code" expression=""/>
+        <default field="cm_r2_code" expression=""/>
+        <default field="cm_r3_code" expression=""/>
+        <default field="cm_r4_code" expression=""/>
+        <default field="cm_voie" expression=""/>
+        <default field="cm_gest_do" expression=""/>
+        <default field="cm_prop_do" expression=""/>
+        <default field="cm_statut" expression=""/>
+        <default field="cm_etat" expression=""/>
+        <default field="cm_datcons" expression=""/>
+        <default field="cm_datemes" expression=""/>
+        <default field="cm_avct" expression=""/>
+        <default field="cm_typelog" expression=""/>
+        <default field="cm_typ_imp" expression=""/>
+        <default field="cm_nature" expression=""/>
+        <default field="cm_compo" expression=""/>
+        <default field="cm_cddispo" expression=""/>
+        <default field="cm_fo_util" expression=""/>
+        <default field="cm_mod_pos" expression=""/>
+        <default field="cm_passage" expression=""/>
+        <default field="cm_revet" expression=""/>
+        <default field="cm_remblai" expression=""/>
+        <default field="cm_charge" expression=""/>
+        <default field="cm_larg" expression=""/>
+        <default field="cm_fildtec" expression=""/>
+        <default field="cm_mut_org" expression=""/>
+        <default field="cm_long" expression=""/>
+        <default field="cm_lgreel" expression=""/>
+        <default field="cm_comment" expression=""/>
+        <default field="cm_dtclass" expression=""/>
+        <default field="cm_geolqlt" expression=""/>
+        <default field="cm_geolmod" expression=""/>
+        <default field="cm_geolsrc" expression=""/>
+        <default field="cm_creadat" expression=""/>
+        <default field="cm_majdate" expression=""/>
+        <default field="cm_majsrc" expression=""/>
+        <default field="cm_abddate" expression=""/>
+        <default field="cm_abdsrc" expression=""/>
+        <default field="dm_cd_code" expression=""/>
+        <default field="dm_cm_code" expression=""/>
+        <default field="dm_creadat" expression=""/>
+        <default field="dm_majdate" expression=""/>
+        <default field="dm_majsrc" expression=""/>
+        <default field="dm_abddate" expression=""/>
+        <default field="dm_abdsrc" expression=""/>
+        <default field="cd_code" expression=""/>
+        <default field="cd_codeext" expression=""/>
+        <default field="cd_etiquet" expression=""/>
+        <default field="cd_cd_code" expression=""/>
+        <default field="cd_r1_code" expression=""/>
+        <default field="cd_r2_code" expression=""/>
+        <default field="cd_r3_code" expression=""/>
+        <default field="cd_r4_code" expression=""/>
+        <default field="cd_prop" expression=""/>
+        <default field="cd_gest" expression=""/>
+        <default field="cd_user" expression=""/>
+        <default field="cd_proptyp" expression=""/>
+        <default field="cd_statut" expression=""/>
+        <default field="cd_etat" expression=""/>
+        <default field="cd_dateaig" expression=""/>
+        <default field="cd_dateman" expression=""/>
+        <default field="cd_datemes" expression=""/>
+        <default field="cd_avct" expression=""/>
+        <default field="cd_type" expression=""/>
+        <default field="cd_dia_int" expression=""/>
+        <default field="cd_dia_ext" expression=""/>
+        <default field="cd_color" expression=""/>
+        <default field="cd_long" expression=""/>
+        <default field="cd_nbcable" expression=""/>
+        <default field="cd_occup" expression=""/>
+        <default field="cd_comment" expression=""/>
+        <default field="cd_creadat" expression=""/>
+        <default field="cd_majdate" expression=""/>
+        <default field="cd_majsrc" expression=""/>
+        <default field="cd_abddate" expression=""/>
+        <default field="cd_abdsrc" expression=""/>
+      </defaults>
+      <previewExpression>COALESCE( "cm_code", '&lt;NULL>' )</previewExpression>
+    </maplayer>
+    <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Line" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+      <id>vs_obj_cd20180312152602342</id>
+      <datasource>dbname='gracethd20ct' host=localhost port=5432 user='postgres' sslmode=disable key='cd_code' srid=2154 type=LineString table="gracethd"."vs_obj_cd" (cd_geom) sql=</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>Conduites générées (vs_obj_cd)</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=lcc +lat_1=49 +lat_2=44 +lat_0=46.5 +lon_0=3 +x_0=700000 +y_0=6600000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</proj4>
+          <srsid>145</srsid>
+          <srid>2154</srid>
+          <authid>EPSG:2154</authid>
+          <description>RGF93 / Lambert-93</description>
+          <projectionacronym>lcc</projectionacronym>
+          <ellipsoidacronym>GRS80</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <provider encoding="UTF-8">postgres</provider>
+      <vectorjoins/>
+      <layerDependencies/>
+      <expressionfields/>
+      <map-layer-style-manager current="">
+        <map-layer-style name=""/>
+      </map-layer-style-manager>
+      <edittypes>
+        <edittype widgetv2type="TextEdit" name="cd_code">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="cd_codeext">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="cd_etiquet">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="cd_r1_code">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="cd_r2_code">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="cd_r3_code">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="cd_r4_code">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="ValueRelation" name="cd_prop">
+          <widgetv2config OrderByValue="0" AllowNull="1" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="or_code" constraint="" Layer="t_organisme_copier20160113091148372" Value="or_nom" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="ValueRelation" name="cd_gest">
+          <widgetv2config OrderByValue="0" AllowNull="1" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="or_code" constraint="" Layer="t_organisme_copier20160113091148372" Value="or_nom" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="ValueRelation" name="cd_user">
+          <widgetv2config OrderByValue="0" AllowNull="1" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="or_code" constraint="" Layer="t_organisme_copier20160113091148372" Value="or_nom" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="ValueRelation" name="cd_proptyp">
+          <widgetv2config OrderByValue="0" AllowNull="1" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" constraint="" Layer="l_propriete_type20160112184742293" Value="code" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="ValueRelation" name="cd_statut">
+          <widgetv2config OrderByValue="0" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" constraint="" Layer="l_statut20160112184742380" Value="code" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="ValueRelation" name="cd_etat">
+          <widgetv2config OrderByValue="0" AllowNull="1" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" constraint="" Layer="l_etat_type20160112184742167" Value="code" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="DateTime" name="cd_dateaig">
+          <widgetv2config fieldEditable="1" calendar_popup="0" allow_null="1" display_format="yyyy-MM-dd" field_format="yyyy-MM-dd" constraint="" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="DateTime" name="cd_dateman">
+          <widgetv2config fieldEditable="1" calendar_popup="0" allow_null="1" display_format="yyyy-MM-dd" field_format="yyyy-MM-dd" constraint="" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="DateTime" name="cd_datemes">
+          <widgetv2config fieldEditable="1" calendar_popup="0" allow_null="1" display_format="yyyy-MM-dd" field_format="yyyy-MM-dd" constraint="" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="ValueRelation" name="cd_avct">
+          <widgetv2config OrderByValue="0" AllowNull="1" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" constraint="" Layer="l_avancement20160112184742087" Value="code" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="ValueRelation" name="cd_type">
+          <widgetv2config OrderByValue="0" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" constraint="" Layer="l_conduite_type20160112184742145" Value="code" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="cd_dia_int">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="cd_dia_ext">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="cd_color">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="cd_long">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="cd_nbcable">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="cd_occup">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="cd_comment">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="DateTime" name="cd_creadat">
+          <widgetv2config fieldEditable="1" calendar_popup="0" allow_null="1" display_format="yyyy-MM-dd HH:mm:ss" field_format="yyyy-MM-dd HH:mm:ss" constraint="" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="DateTime" name="cd_majdate">
+          <widgetv2config fieldEditable="1" calendar_popup="0" allow_null="1" display_format="yyyy-MM-dd HH:mm:ss" field_format="yyyy-MM-dd HH:mm:ss" constraint="" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="cd_majsrc">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="DateTime" name="cd_abddate">
+          <widgetv2config fieldEditable="1" calendar_popup="0" allow_null="1" display_format="yyyy-MM-dd HH:mm:ss" field_format="yyyy-MM-dd HH:mm:ss" constraint="" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="cd_abdsrc">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="cd_geomlng">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="cd_nb_cm">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="cd_isvalid">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="cd_geomtyp">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+      </edittypes>
+      <renderer-v2 forceraster="0" symbollevels="0" type="singleSymbol" enableorderby="0">
+        <symbols>
+          <symbol alpha="1" clip_to_extent="1" type="line" name="0">
+            <layer pass="0" class="SimpleLine" locked="0">
+              <prop k="capstyle" v="square"/>
+              <prop k="customdash" v="5;2"/>
+              <prop k="customdash_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="customdash_unit" v="MM"/>
+              <prop k="draw_inside_polygon" v="0"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="line_color" v="193,193,193,255"/>
+              <prop k="line_style" v="solid"/>
+              <prop k="line_width" v="0.86"/>
+              <prop k="line_width_unit" v="MM"/>
+              <prop k="offset" v="0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="use_custom_dash" v="0"/>
+              <prop k="width_map_unit_scale" v="0,0,0,0,0,0"/>
+            </layer>
+            <layer pass="0" class="SimpleLine" locked="0">
+              <prop k="capstyle" v="square"/>
+              <prop k="customdash" v="5;2"/>
+              <prop k="customdash_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="customdash_unit" v="MM"/>
+              <prop k="draw_inside_polygon" v="0"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="line_color" v="106,106,106,255"/>
+              <prop k="line_style" v="solid"/>
+              <prop k="line_width" v="0.3"/>
+              <prop k="line_width_unit" v="MM"/>
+              <prop k="offset" v="0.6"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="use_custom_dash" v="0"/>
+              <prop k="width_map_unit_scale" v="0,0,0,0,0,0"/>
+            </layer>
+            <layer pass="0" class="SimpleLine" locked="0">
+              <prop k="capstyle" v="square"/>
+              <prop k="customdash" v="5;2"/>
+              <prop k="customdash_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="customdash_unit" v="MM"/>
+              <prop k="draw_inside_polygon" v="0"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="line_color" v="106,106,106,255"/>
+              <prop k="line_style" v="solid"/>
+              <prop k="line_width" v="0.3"/>
+              <prop k="line_width_unit" v="MM"/>
+              <prop k="offset" v="-0.6"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="use_custom_dash" v="0"/>
+              <prop k="width_map_unit_scale" v="0,0,0,0,0,0"/>
+            </layer>
+          </symbol>
+        </symbols>
+        <rotation/>
+        <sizescale scalemethod="diameter"/>
+      </renderer-v2>
+      <labeling type="simple"/>
+      <customproperties>
+        <property key="labeling" value="pal"/>
+        <property key="labeling/addDirectionSymbol" value="false"/>
+        <property key="labeling/angleOffset" value="0"/>
+        <property key="labeling/blendMode" value="0"/>
+        <property key="labeling/bufferBlendMode" value="0"/>
+        <property key="labeling/bufferColorA" value="255"/>
+        <property key="labeling/bufferColorB" value="255"/>
+        <property key="labeling/bufferColorG" value="255"/>
+        <property key="labeling/bufferColorR" value="255"/>
+        <property key="labeling/bufferDraw" value="false"/>
+        <property key="labeling/bufferJoinStyle" value="64"/>
+        <property key="labeling/bufferNoFill" value="false"/>
+        <property key="labeling/bufferSize" value="1"/>
+        <property key="labeling/bufferSizeInMapUnits" value="false"/>
+        <property key="labeling/bufferSizeMapUnitMaxScale" value="0"/>
+        <property key="labeling/bufferSizeMapUnitMinScale" value="0"/>
+        <property key="labeling/bufferSizeMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/bufferTransp" value="0"/>
+        <property key="labeling/centroidInside" value="false"/>
+        <property key="labeling/centroidWhole" value="false"/>
+        <property key="labeling/decimals" value="3"/>
+        <property key="labeling/displayAll" value="false"/>
+        <property key="labeling/dist" value="0"/>
+        <property key="labeling/distInMapUnits" value="false"/>
+        <property key="labeling/distMapUnitMaxScale" value="0"/>
+        <property key="labeling/distMapUnitMinScale" value="0"/>
+        <property key="labeling/distMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/drawLabels" value="false"/>
+        <property key="labeling/enabled" value="false"/>
+        <property key="labeling/fieldName" value=""/>
+        <property key="labeling/fitInPolygonOnly" value="false"/>
+        <property key="labeling/fontBold" value="false"/>
+        <property key="labeling/fontCapitals" value="0"/>
+        <property key="labeling/fontFamily" value="MS Shell Dlg 2"/>
+        <property key="labeling/fontItalic" value="false"/>
+        <property key="labeling/fontLetterSpacing" value="0"/>
+        <property key="labeling/fontLimitPixelSize" value="false"/>
+        <property key="labeling/fontMaxPixelSize" value="10000"/>
+        <property key="labeling/fontMinPixelSize" value="3"/>
+        <property key="labeling/fontSize" value="7.8"/>
+        <property key="labeling/fontSizeInMapUnits" value="false"/>
+        <property key="labeling/fontSizeMapUnitMaxScale" value="0"/>
+        <property key="labeling/fontSizeMapUnitMinScale" value="0"/>
+        <property key="labeling/fontSizeMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/fontStrikeout" value="false"/>
+        <property key="labeling/fontUnderline" value="false"/>
+        <property key="labeling/fontWeight" value="50"/>
+        <property key="labeling/fontWordSpacing" value="0"/>
+        <property key="labeling/formatNumbers" value="false"/>
+        <property key="labeling/isExpression" value="true"/>
+        <property key="labeling/labelOffsetInMapUnits" value="true"/>
+        <property key="labeling/labelOffsetMapUnitMaxScale" value="0"/>
+        <property key="labeling/labelOffsetMapUnitMinScale" value="0"/>
+        <property key="labeling/labelOffsetMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/labelPerPart" value="false"/>
+        <property key="labeling/leftDirectionSymbol" value="&lt;"/>
+        <property key="labeling/limitNumLabels" value="false"/>
+        <property key="labeling/maxCurvedCharAngleIn" value="20"/>
+        <property key="labeling/maxCurvedCharAngleOut" value="-20"/>
+        <property key="labeling/maxNumLabels" value="2000"/>
+        <property key="labeling/mergeLines" value="false"/>
+        <property key="labeling/minFeatureSize" value="0"/>
+        <property key="labeling/multilineAlign" value="0"/>
+        <property key="labeling/multilineHeight" value="1"/>
+        <property key="labeling/namedStyle" value="Normal"/>
+        <property key="labeling/obstacle" value="true"/>
+        <property key="labeling/obstacleFactor" value="1"/>
+        <property key="labeling/obstacleType" value="0"/>
+        <property key="labeling/offsetType" value="0"/>
+        <property key="labeling/placeDirectionSymbol" value="0"/>
+        <property key="labeling/placement" value="2"/>
+        <property key="labeling/placementFlags" value="10"/>
+        <property key="labeling/plussign" value="false"/>
+        <property key="labeling/predefinedPositionOrder" value="TR,TL,BR,BL,R,L,TSR,BSR"/>
+        <property key="labeling/preserveRotation" value="true"/>
+        <property key="labeling/previewBkgrdColor" value="#ffffff"/>
+        <property key="labeling/priority" value="5"/>
+        <property key="labeling/quadOffset" value="4"/>
+        <property key="labeling/repeatDistance" value="0"/>
+        <property key="labeling/repeatDistanceMapUnitMaxScale" value="0"/>
+        <property key="labeling/repeatDistanceMapUnitMinScale" value="0"/>
+        <property key="labeling/repeatDistanceMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/repeatDistanceUnit" value="1"/>
+        <property key="labeling/reverseDirectionSymbol" value="false"/>
+        <property key="labeling/rightDirectionSymbol" value=">"/>
+        <property key="labeling/scaleMax" value="10000000"/>
+        <property key="labeling/scaleMin" value="1"/>
+        <property key="labeling/scaleVisibility" value="false"/>
+        <property key="labeling/shadowBlendMode" value="6"/>
+        <property key="labeling/shadowColorB" value="0"/>
+        <property key="labeling/shadowColorG" value="0"/>
+        <property key="labeling/shadowColorR" value="0"/>
+        <property key="labeling/shadowDraw" value="false"/>
+        <property key="labeling/shadowOffsetAngle" value="135"/>
+        <property key="labeling/shadowOffsetDist" value="1"/>
+        <property key="labeling/shadowOffsetGlobal" value="true"/>
+        <property key="labeling/shadowOffsetMapUnitMaxScale" value="0"/>
+        <property key="labeling/shadowOffsetMapUnitMinScale" value="0"/>
+        <property key="labeling/shadowOffsetMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shadowOffsetUnits" value="1"/>
+        <property key="labeling/shadowRadius" value="1.5"/>
+        <property key="labeling/shadowRadiusAlphaOnly" value="false"/>
+        <property key="labeling/shadowRadiusMapUnitMaxScale" value="0"/>
+        <property key="labeling/shadowRadiusMapUnitMinScale" value="0"/>
+        <property key="labeling/shadowRadiusMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shadowRadiusUnits" value="1"/>
+        <property key="labeling/shadowScale" value="100"/>
+        <property key="labeling/shadowTransparency" value="30"/>
+        <property key="labeling/shadowUnder" value="0"/>
+        <property key="labeling/shapeBlendMode" value="0"/>
+        <property key="labeling/shapeBorderColorA" value="255"/>
+        <property key="labeling/shapeBorderColorB" value="128"/>
+        <property key="labeling/shapeBorderColorG" value="128"/>
+        <property key="labeling/shapeBorderColorR" value="128"/>
+        <property key="labeling/shapeBorderWidth" value="0"/>
+        <property key="labeling/shapeBorderWidthMapUnitMaxScale" value="0"/>
+        <property key="labeling/shapeBorderWidthMapUnitMinScale" value="0"/>
+        <property key="labeling/shapeBorderWidthMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shapeBorderWidthUnits" value="1"/>
+        <property key="labeling/shapeDraw" value="false"/>
+        <property key="labeling/shapeFillColorA" value="255"/>
+        <property key="labeling/shapeFillColorB" value="255"/>
+        <property key="labeling/shapeFillColorG" value="255"/>
+        <property key="labeling/shapeFillColorR" value="255"/>
+        <property key="labeling/shapeJoinStyle" value="64"/>
+        <property key="labeling/shapeOffsetMapUnitMaxScale" value="0"/>
+        <property key="labeling/shapeOffsetMapUnitMinScale" value="0"/>
+        <property key="labeling/shapeOffsetMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shapeOffsetUnits" value="1"/>
+        <property key="labeling/shapeOffsetX" value="0"/>
+        <property key="labeling/shapeOffsetY" value="0"/>
+        <property key="labeling/shapeRadiiMapUnitMaxScale" value="0"/>
+        <property key="labeling/shapeRadiiMapUnitMinScale" value="0"/>
+        <property key="labeling/shapeRadiiMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shapeRadiiUnits" value="1"/>
+        <property key="labeling/shapeRadiiX" value="0"/>
+        <property key="labeling/shapeRadiiY" value="0"/>
+        <property key="labeling/shapeRotation" value="0"/>
+        <property key="labeling/shapeRotationType" value="0"/>
+        <property key="labeling/shapeSVGFile" value=""/>
+        <property key="labeling/shapeSizeMapUnitMaxScale" value="0"/>
+        <property key="labeling/shapeSizeMapUnitMinScale" value="0"/>
+        <property key="labeling/shapeSizeMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shapeSizeType" value="0"/>
+        <property key="labeling/shapeSizeUnits" value="1"/>
+        <property key="labeling/shapeSizeX" value="0"/>
+        <property key="labeling/shapeSizeY" value="0"/>
+        <property key="labeling/shapeTransparency" value="0"/>
+        <property key="labeling/shapeType" value="0"/>
+        <property key="labeling/textColorA" value="255"/>
+        <property key="labeling/textColorB" value="0"/>
+        <property key="labeling/textColorG" value="0"/>
+        <property key="labeling/textColorR" value="0"/>
+        <property key="labeling/textTransp" value="0"/>
+        <property key="labeling/upsidedownLabels" value="0"/>
+        <property key="labeling/wrapChar" value=""/>
+        <property key="labeling/xOffset" value="0"/>
+        <property key="labeling/yOffset" value="0"/>
+        <property key="labeling/zIndex" value="0"/>
+        <property key="variableNames"/>
+        <property key="variableValues"/>
+      </customproperties>
+      <blendMode>0</blendMode>
+      <featureBlendMode>0</featureBlendMode>
+      <layerTransparency>0</layerTransparency>
+      <displayfield>cd_code</displayfield>
+      <label>0</label>
+      <labelattributes>
+        <label fieldname="" text="Étiquette"/>
+        <family fieldname="" name="MS Shell Dlg 2"/>
+        <size fieldname="" units="pt" value="12"/>
+        <bold fieldname="" on="0"/>
+        <italic fieldname="" on="0"/>
+        <underline fieldname="" on="0"/>
+        <strikeout fieldname="" on="0"/>
+        <color fieldname="" red="0" blue="0" green="0"/>
+        <x fieldname=""/>
+        <y fieldname=""/>
+        <offset x="0" y="0" units="pt" yfieldname="" xfieldname=""/>
+        <angle fieldname="" value="0" auto="0"/>
+        <alignment fieldname="" value="center"/>
+        <buffercolor fieldname="" red="255" blue="255" green="255"/>
+        <buffersize fieldname="" units="pt" value="1"/>
+        <bufferenabled fieldname="" on=""/>
+        <multilineenabled fieldname="" on=""/>
+        <selectedonly on=""/>
+      </labelattributes>
+      <SingleCategoryDiagramRenderer diagramType="Pie" sizeLegend="0" attributeLegend="1">
+        <DiagramCategory penColor="#000000" labelPlacementMethod="XHeight" penWidth="0" diagramOrientation="Up" sizeScale="0,0,0,0,0,0" minimumSize="0" barWidth="5" penAlpha="255" maxScaleDenominator="1e+08" backgroundColor="#ffffff" transparency="0" width="15" scaleDependency="Area" backgroundAlpha="255" angleOffset="1440" scaleBasedVisibility="0" enabled="0" height="15" lineSizeScale="0,0,0,0,0,0" sizeType="MM" lineSizeType="MM" minScaleDenominator="-4.65661e-10">
+          <fontProperties description="MS Shell Dlg 2,7.8,-1,5,50,0,0,0,0,0" style=""/>
+          <attribute field="" color="#000000" label=""/>
+        </DiagramCategory>
+        <symbol alpha="1" clip_to_extent="1" type="marker" name="sizeSymbol">
+          <layer pass="0" class="SimpleMarker" locked="0">
+            <prop k="angle" v="0"/>
+            <prop k="color" v="255,0,0,255"/>
+            <prop k="horizontal_anchor_point" v="1"/>
+            <prop k="joinstyle" v="bevel"/>
+            <prop k="name" v="circle"/>
+            <prop k="offset" v="0,0"/>
+            <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+            <prop k="offset_unit" v="MM"/>
+            <prop k="outline_color" v="0,0,0,255"/>
+            <prop k="outline_style" v="solid"/>
+            <prop k="outline_width" v="0"/>
+            <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+            <prop k="outline_width_unit" v="MM"/>
+            <prop k="scale_method" v="diameter"/>
+            <prop k="size" v="2"/>
+            <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+            <prop k="size_unit" v="MM"/>
+            <prop k="vertical_anchor_point" v="1"/>
+          </layer>
+        </symbol>
+      </SingleCategoryDiagramRenderer>
+      <DiagramLayerSettings yPosColumn="-1" showColumn="0" linePlacementFlags="10" placement="2" dist="0" xPosColumn="-1" priority="0" obstacle="0" zIndex="0" showAll="1"/>
+      <annotationform>../../qgis28/qgs</annotationform>
+      <aliases>
+        <alias field="cd_code" index="0" name=""/>
+        <alias field="cd_codeext" index="1" name=""/>
+        <alias field="cd_etiquet" index="2" name=""/>
+        <alias field="cd_r1_code" index="3" name=""/>
+        <alias field="cd_r2_code" index="4" name=""/>
+        <alias field="cd_r3_code" index="5" name=""/>
+        <alias field="cd_r4_code" index="6" name=""/>
+        <alias field="cd_prop" index="7" name=""/>
+        <alias field="cd_gest" index="8" name=""/>
+        <alias field="cd_user" index="9" name=""/>
+        <alias field="cd_proptyp" index="10" name=""/>
+        <alias field="cd_statut" index="11" name=""/>
+        <alias field="cd_etat" index="12" name=""/>
+        <alias field="cd_dateaig" index="13" name=""/>
+        <alias field="cd_dateman" index="14" name=""/>
+        <alias field="cd_datemes" index="15" name=""/>
+        <alias field="cd_avct" index="16" name=""/>
+        <alias field="cd_type" index="17" name=""/>
+        <alias field="cd_dia_int" index="18" name=""/>
+        <alias field="cd_dia_ext" index="19" name=""/>
+        <alias field="cd_color" index="20" name=""/>
+        <alias field="cd_long" index="21" name=""/>
+        <alias field="cd_nbcable" index="22" name=""/>
+        <alias field="cd_occup" index="23" name=""/>
+        <alias field="cd_comment" index="24" name=""/>
+        <alias field="cd_creadat" index="25" name=""/>
+        <alias field="cd_majdate" index="26" name=""/>
+        <alias field="cd_majsrc" index="27" name=""/>
+        <alias field="cd_abddate" index="28" name=""/>
+        <alias field="cd_abdsrc" index="29" name=""/>
+        <alias field="cd_geomlng" index="30" name=""/>
+        <alias field="cd_nb_cm" index="31" name=""/>
+        <alias field="cd_isvalid" index="32" name=""/>
+        <alias field="cd_geomtyp" index="33" name=""/>
+      </aliases>
+      <excludeAttributesWMS/>
+      <excludeAttributesWFS/>
+      <attributeactions default="-1"/>
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
+        <columns/>
+      </attributetableconfig>
+      <editform>../../qgis28/qgs</editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath>.</editforminitfilepath>
+      <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
+"""
+Les formulaires QGIS peuvent avoir une fonction Python qui sera appelée à l'ouverture du formulaire.
+
+Utilisez cette fonction pour ajouter plus de fonctionnalités à vos formulaires.
+
+Entrez le nom de la fonction dans le champ
+"Fonction d'initialisation Python"
+Voici un exemple à suivre:
+"""
+from PyQt4.QtGui import QWidget
+
+def my_form_open(dialog, layer, feature):
+⇥geom = feature.geometry()
+⇥control = dialog.findChild(QWidget, "MyLineEdit")
+]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>tablayout</editorlayout>
+      <attributeEditorForm>
+        <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Général" groupBox="0" columnCount="0">
+          <attributeEditorField showLabel="1" index="0" name="cd_code"/>
+          <attributeEditorField showLabel="1" index="1" name="cd_codeext"/>
+          <attributeEditorField showLabel="1" index="2" name="cd_etiquet"/>
+          <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Relations" groupBox="1" columnCount="0">
+            <attributeEditorField showLabel="1" index="-1" name="dm_id"/>
+            <attributeEditorField showLabel="1" index="-1" name="dm_cd_code"/>
+            <attributeEditorField showLabel="1" index="-1" name="dm_cm_code"/>
+            <attributeEditorField showLabel="1" index="-1" name="cm_code"/>
+            <attributeEditorField showLabel="1" index="-1" name="cd_cd_code"/>
+          </attributeEditorContainer>
+          <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Référencement" groupBox="1" columnCount="0">
+            <attributeEditorField showLabel="1" index="3" name="cd_r1_code"/>
+            <attributeEditorField showLabel="1" index="4" name="cd_r2_code"/>
+            <attributeEditorField showLabel="1" index="5" name="cd_r3_code"/>
+            <attributeEditorField showLabel="1" index="6" name="cd_r4_code"/>
+          </attributeEditorContainer>
+          <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Caractéristiques" groupBox="1" columnCount="0">
+            <attributeEditorField showLabel="1" index="10" name="cd_proptyp"/>
+            <attributeEditorField showLabel="1" index="7" name="cd_prop"/>
+            <attributeEditorField showLabel="1" index="8" name="cd_gest"/>
+            <attributeEditorField showLabel="1" index="9" name="cd_user"/>
+            <attributeEditorField showLabel="1" index="17" name="cd_type"/>
+            <attributeEditorField showLabel="1" index="18" name="cd_dia_int"/>
+            <attributeEditorField showLabel="1" index="19" name="cd_dia_ext"/>
+            <attributeEditorField showLabel="1" index="20" name="cd_color"/>
+          </attributeEditorContainer>
+        </attributeEditorContainer>
+        <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Gestion" groupBox="0" columnCount="0">
+          <attributeEditorField showLabel="1" index="0" name="cd_code"/>
+          <attributeEditorField showLabel="1" index="1" name="cd_codeext"/>
+          <attributeEditorField showLabel="1" index="2" name="cd_etiquet"/>
+          <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Déploiement" groupBox="1" columnCount="0">
+            <attributeEditorField showLabel="1" index="11" name="cd_statut"/>
+            <attributeEditorField showLabel="1" index="13" name="cd_dateaig"/>
+            <attributeEditorField showLabel="1" index="14" name="cd_dateman"/>
+            <attributeEditorField showLabel="1" index="15" name="cd_datemes"/>
+            <attributeEditorField showLabel="1" index="16" name="cd_avct"/>
+          </attributeEditorContainer>
+          <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Technique" groupBox="1" columnCount="0">
+            <attributeEditorField showLabel="1" index="12" name="cd_etat"/>
+            <attributeEditorField showLabel="1" index="22" name="cd_nbcable"/>
+            <attributeEditorField showLabel="1" index="23" name="cd_occup"/>
+            <attributeEditorField showLabel="1" index="21" name="cd_long"/>
+          </attributeEditorContainer>
+        </attributeEditorContainer>
+        <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Métadonnées (V)" groupBox="0" columnCount="0">
+          <attributeEditorField showLabel="1" index="0" name="cd_code"/>
+          <attributeEditorField showLabel="1" index="1" name="cd_codeext"/>
+          <attributeEditorField showLabel="1" index="2" name="cd_etiquet"/>
+          <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Traçabilité CD" groupBox="1" columnCount="0">
+            <attributeEditorField showLabel="1" index="24" name="cd_comment"/>
+            <attributeEditorField showLabel="1" index="25" name="cd_creadat"/>
+            <attributeEditorField showLabel="1" index="26" name="cd_majdate"/>
+            <attributeEditorField showLabel="1" index="27" name="cd_majsrc"/>
+            <attributeEditorField showLabel="1" index="28" name="cd_abddate"/>
+            <attributeEditorField showLabel="1" index="29" name="cd_abdsrc"/>
+          </attributeEditorContainer>
+          <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Traçabilité DM" groupBox="1" columnCount="0">
+            <attributeEditorField showLabel="1" index="-1" name="dm_creadat"/>
+            <attributeEditorField showLabel="1" index="-1" name="dm_majdate"/>
+            <attributeEditorField showLabel="1" index="-1" name="dm_majsrc"/>
+            <attributeEditorField showLabel="1" index="-1" name="dm_abddate"/>
+            <attributeEditorField showLabel="1" index="-1" name="dm_abdsrc"/>
+          </attributeEditorContainer>
+        </attributeEditorContainer>
+        <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Cheminement (V)" groupBox="0" columnCount="0">
+          <attributeEditorField showLabel="1" index="0" name="cd_code"/>
+          <attributeEditorField showLabel="1" index="1" name="cd_codeext"/>
+          <attributeEditorField showLabel="1" index="2" name="cd_etiquet"/>
+          <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Général CM" groupBox="1" columnCount="0">
+            <attributeEditorField showLabel="1" index="-1" name="cm_code"/>
+            <attributeEditorField showLabel="1" index="-1" name="cm_codeext"/>
+            <attributeEditorField showLabel="1" index="-1" name="cm_ndcode1"/>
+            <attributeEditorField showLabel="1" index="-1" name="cm_ndcode2"/>
+            <attributeEditorField showLabel="1" index="-1" name="cm_cm1"/>
+            <attributeEditorField showLabel="1" index="-1" name="cm_cm2"/>
+            <attributeEditorField showLabel="1" index="-1" name="cm_r1_code"/>
+            <attributeEditorField showLabel="1" index="-1" name="cm_r2_code"/>
+            <attributeEditorField showLabel="1" index="-1" name="cm_r3_code"/>
+            <attributeEditorField showLabel="1" index="-1" name="cm_r4_code"/>
+            <attributeEditorField showLabel="1" index="-1" name="cm_typelog"/>
+            <attributeEditorField showLabel="1" index="-1" name="cm_nature"/>
+            <attributeEditorField showLabel="1" index="-1" name="cm_compo"/>
+            <attributeEditorField showLabel="1" index="-1" name="cm_typ_imp"/>
+            <attributeEditorField showLabel="1" index="-1" name="cm_long"/>
+            <attributeEditorField showLabel="1" index="-1" name="cm_lgreel"/>
+          </attributeEditorContainer>
+          <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="GC (CM)" groupBox="1" columnCount="0">
+            <attributeEditorField showLabel="1" index="-1" name="cm_voie"/>
+            <attributeEditorField showLabel="1" index="-1" name="cm_gest_do"/>
+            <attributeEditorField showLabel="1" index="-1" name="cm_prop_do"/>
+            <attributeEditorField showLabel="1" index="-1" name="cm_mod_pos"/>
+            <attributeEditorField showLabel="1" index="-1" name="cm_passage"/>
+            <attributeEditorField showLabel="1" index="-1" name="cm_revet"/>
+            <attributeEditorField showLabel="1" index="-1" name="cm_remblai"/>
+            <attributeEditorField showLabel="1" index="-1" name="cm_charge"/>
+            <attributeEditorField showLabel="1" index="-1" name="cm_larg"/>
+            <attributeEditorField showLabel="1" index="-1" name="cm_fildtec"/>
+          </attributeEditorContainer>
+          <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Gestion CM" groupBox="1" columnCount="0">
+            <attributeEditorField showLabel="1" index="-1" name="cm_statut"/>
+            <attributeEditorField showLabel="1" index="-1" name="cm_datcons"/>
+            <attributeEditorField showLabel="1" index="-1" name="cm_datemes"/>
+            <attributeEditorField showLabel="1" index="-1" name="cm_avct"/>
+            <attributeEditorField showLabel="1" index="-1" name="cm_etat"/>
+            <attributeEditorField showLabel="1" index="-1" name="cm_mut_org"/>
+            <attributeEditorField showLabel="1" index="-1" name="cm_cddispo"/>
+            <attributeEditorField showLabel="1" index="-1" name="cm_fo_util"/>
+          </attributeEditorContainer>
+          <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Traçabilité CM" groupBox="1" columnCount="0">
+            <attributeEditorField showLabel="1" index="-1" name="cm_comment"/>
+            <attributeEditorField showLabel="1" index="-1" name="cm_dtclass"/>
+            <attributeEditorField showLabel="1" index="-1" name="cm_geolqlt"/>
+            <attributeEditorField showLabel="1" index="-1" name="cm_geolmod"/>
+            <attributeEditorField showLabel="1" index="-1" name="cm_geolsrc"/>
+            <attributeEditorField showLabel="1" index="-1" name="cm_creadat"/>
+            <attributeEditorField showLabel="1" index="-1" name="cm_majdate"/>
+            <attributeEditorField showLabel="1" index="-1" name="cm_majsrc"/>
+            <attributeEditorField showLabel="1" index="-1" name="cm_abddate"/>
+            <attributeEditorField showLabel="1" index="-1" name="cm_abdsrc"/>
+          </attributeEditorContainer>
+        </attributeEditorContainer>
+        <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Câble (R)" groupBox="0" columnCount="0">
+          <attributeEditorField showLabel="1" index="0" name="cd_code"/>
+          <attributeEditorField showLabel="1" index="1" name="cd_codeext"/>
+          <attributeEditorField showLabel="1" index="2" name="cd_etiquet"/>
+          <attributeEditorRelation showLinkButton="1" relation="t_cab_cond20160112184902944_cc_cd_code_vs_elem_cd_dm_cm_copier20160721163530789_cd_code" showLabel="1" showUnlinkButton="1" name="t_cab_cond20160112184902944_cc_cd_code_vs_elem_cd_dm_cm_copier20160721163530789_cd_code"/>
+        </attributeEditorContainer>
+      </attributeEditorForm>
+      <widgets>
+        <widget name="t_cab_cond20160112184902944_cc_cd_code_vs_elem_cd_dm_cm_copier20160721163530789_cd_code">
+          <config/>
+        </widget>
+      </widgets>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+      <defaults>
+        <default field="cd_code" expression=""/>
+        <default field="cd_codeext" expression=""/>
+        <default field="cd_etiquet" expression=""/>
+        <default field="cd_r1_code" expression=""/>
+        <default field="cd_r2_code" expression=""/>
+        <default field="cd_r3_code" expression=""/>
+        <default field="cd_r4_code" expression=""/>
+        <default field="cd_prop" expression=""/>
+        <default field="cd_gest" expression=""/>
+        <default field="cd_user" expression=""/>
+        <default field="cd_proptyp" expression=""/>
+        <default field="cd_statut" expression=""/>
+        <default field="cd_etat" expression=""/>
+        <default field="cd_dateaig" expression=""/>
+        <default field="cd_dateman" expression=""/>
+        <default field="cd_datemes" expression=""/>
+        <default field="cd_avct" expression=""/>
+        <default field="cd_type" expression=""/>
+        <default field="cd_dia_int" expression=""/>
+        <default field="cd_dia_ext" expression=""/>
+        <default field="cd_color" expression=""/>
+        <default field="cd_long" expression=""/>
+        <default field="cd_nbcable" expression=""/>
+        <default field="cd_occup" expression=""/>
+        <default field="cd_comment" expression=""/>
+        <default field="cd_creadat" expression=""/>
+        <default field="cd_majdate" expression=""/>
+        <default field="cd_majsrc" expression=""/>
+        <default field="cd_abddate" expression=""/>
+        <default field="cd_abdsrc" expression=""/>
+        <default field="cd_geomlng" expression=""/>
+        <default field="cd_nb_cm" expression=""/>
+        <default field="cd_isvalid" expression=""/>
+        <default field="cd_geomtyp" expression=""/>
+      </defaults>
+      <previewExpression>COALESCE( "cd_code", '&lt;NULL>' )</previewExpression>
+    </maplayer>
+    <maplayer minimumScale="0" maximumScale="1e+08" readOnly="0" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
+      <id>v_obj_ba20180312163920613</id>
+      <datasource>dbname='gracethd20ct' host=localhost port=5432 user='postgres' sslmode=disable key='et_code' table="gracethd"."v_obj_ba" sql=</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>Plans de baies (v_obj_ba)</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+          <srsid>3452</srsid>
+          <srid>4326</srid>
+          <authid>EPSG:4326</authid>
+          <description>WGS 84</description>
+          <projectionacronym>longlat</projectionacronym>
+          <ellipsoidacronym>WGS84</ellipsoidacronym>
+          <geographicflag>true</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <customproperties/>
+      <provider encoding="UTF-8">postgres</provider>
+      <vectorjoins/>
+      <layerDependencies/>
+      <expressionfields/>
+      <map-layer-style-manager current="">
+        <map-layer-style name=""/>
+      </map-layer-style-manager>
+      <edittypes>
+        <edittype widgetv2type="TextEdit" name="ba_code">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="ba_codeext">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="ba_etiquet">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="ba_lt_code">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="ba_prop">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="ba_gest">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="ba_user">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="ba_proptyp">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="ba_statut">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="ba_etat">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="ba_rf_code">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="ba_type">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="ba_nb_u">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="ba_haut">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="ba_larg">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="ba_prof">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="ba_comment">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="ba_creadat">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="ba_majdate">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="ba_majsrc">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="ba_abddate">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="ba_abdsrc">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="et_code">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="et_codeext">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="et_etiquet">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="et_ba_code">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="et_prop">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="et_etat">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="et_type">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="et_rf_code">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="et_dateins">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="et_datemes">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="et_taille">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="et_placemt">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="et_localis">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="et_comment">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="et_creadat">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="et_majdate">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="et_majsrc">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="et_abddate">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="et_absrc">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+      </edittypes>
+      <annotationform></annotationform>
+      <aliases>
+        <alias field="ba_code" index="0" name=""/>
+        <alias field="ba_codeext" index="1" name=""/>
+        <alias field="ba_etiquet" index="2" name=""/>
+        <alias field="ba_lt_code" index="3" name=""/>
+        <alias field="ba_prop" index="4" name=""/>
+        <alias field="ba_gest" index="5" name=""/>
+        <alias field="ba_user" index="6" name=""/>
+        <alias field="ba_proptyp" index="7" name=""/>
+        <alias field="ba_statut" index="8" name=""/>
+        <alias field="ba_etat" index="9" name=""/>
+        <alias field="ba_rf_code" index="10" name=""/>
+        <alias field="ba_type" index="11" name=""/>
+        <alias field="ba_nb_u" index="12" name=""/>
+        <alias field="ba_haut" index="13" name=""/>
+        <alias field="ba_larg" index="14" name=""/>
+        <alias field="ba_prof" index="15" name=""/>
+        <alias field="ba_comment" index="16" name=""/>
+        <alias field="ba_creadat" index="17" name=""/>
+        <alias field="ba_majdate" index="18" name=""/>
+        <alias field="ba_majsrc" index="19" name=""/>
+        <alias field="ba_abddate" index="20" name=""/>
+        <alias field="ba_abdsrc" index="21" name=""/>
+        <alias field="et_code" index="22" name=""/>
+        <alias field="et_codeext" index="23" name=""/>
+        <alias field="et_etiquet" index="24" name=""/>
+        <alias field="et_ba_code" index="25" name=""/>
+        <alias field="et_prop" index="26" name=""/>
+        <alias field="et_etat" index="27" name=""/>
+        <alias field="et_type" index="28" name=""/>
+        <alias field="et_rf_code" index="29" name=""/>
+        <alias field="et_dateins" index="30" name=""/>
+        <alias field="et_datemes" index="31" name=""/>
+        <alias field="et_taille" index="32" name=""/>
+        <alias field="et_placemt" index="33" name=""/>
+        <alias field="et_localis" index="34" name=""/>
+        <alias field="et_comment" index="35" name=""/>
+        <alias field="et_creadat" index="36" name=""/>
+        <alias field="et_majdate" index="37" name=""/>
+        <alias field="et_majsrc" index="38" name=""/>
+        <alias field="et_abddate" index="39" name=""/>
+        <alias field="et_absrc" index="40" name=""/>
+      </aliases>
+      <excludeAttributesWMS/>
+      <excludeAttributesWFS/>
+      <attributeactions default="-1"/>
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="158">
+        <columns>
+          <column width="151" hidden="0" type="field" name="ba_code"/>
+          <column width="-1" hidden="0" type="field" name="ba_codeext"/>
+          <column width="-1" hidden="0" type="field" name="ba_etiquet"/>
+          <column width="-1" hidden="0" type="field" name="ba_lt_code"/>
+          <column width="166" hidden="0" type="field" name="ba_prop"/>
+          <column width="-1" hidden="0" type="field" name="ba_gest"/>
+          <column width="-1" hidden="0" type="field" name="ba_user"/>
+          <column width="-1" hidden="0" type="field" name="ba_proptyp"/>
+          <column width="-1" hidden="0" type="field" name="ba_statut"/>
+          <column width="-1" hidden="0" type="field" name="ba_etat"/>
+          <column width="-1" hidden="0" type="field" name="ba_rf_code"/>
+          <column width="-1" hidden="0" type="field" name="ba_type"/>
+          <column width="-1" hidden="0" type="field" name="ba_nb_u"/>
+          <column width="-1" hidden="0" type="field" name="ba_haut"/>
+          <column width="-1" hidden="0" type="field" name="ba_larg"/>
+          <column width="-1" hidden="0" type="field" name="ba_prof"/>
+          <column width="-1" hidden="0" type="field" name="ba_comment"/>
+          <column width="-1" hidden="0" type="field" name="ba_creadat"/>
+          <column width="-1" hidden="0" type="field" name="ba_majdate"/>
+          <column width="-1" hidden="0" type="field" name="ba_majsrc"/>
+          <column width="-1" hidden="0" type="field" name="ba_abddate"/>
+          <column width="-1" hidden="0" type="field" name="ba_abdsrc"/>
+          <column width="152" hidden="0" type="field" name="et_code"/>
+          <column width="241" hidden="0" type="field" name="et_codeext"/>
+          <column width="-1" hidden="0" type="field" name="et_etiquet"/>
+          <column width="-1" hidden="0" type="field" name="et_ba_code"/>
+          <column width="-1" hidden="0" type="field" name="et_prop"/>
+          <column width="-1" hidden="0" type="field" name="et_etat"/>
+          <column width="-1" hidden="0" type="field" name="et_type"/>
+          <column width="-1" hidden="0" type="field" name="et_rf_code"/>
+          <column width="-1" hidden="0" type="field" name="et_dateins"/>
+          <column width="-1" hidden="0" type="field" name="et_datemes"/>
+          <column width="-1" hidden="0" type="field" name="et_taille"/>
+          <column width="-1" hidden="0" type="field" name="et_placemt"/>
+          <column width="-1" hidden="0" type="field" name="et_localis"/>
+          <column width="-1" hidden="0" type="field" name="et_comment"/>
+          <column width="-1" hidden="0" type="field" name="et_creadat"/>
+          <column width="-1" hidden="0" type="field" name="et_majdate"/>
+          <column width="-1" hidden="0" type="field" name="et_majsrc"/>
+          <column width="-1" hidden="0" type="field" name="et_abddate"/>
+          <column width="-1" hidden="0" type="field" name="et_absrc"/>
+          <column width="-1" hidden="1" type="actions"/>
+        </columns>
+      </attributetableconfig>
+      <editform></editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath></editforminitfilepath>
+      <editforminitcode><![CDATA[]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <widgets/>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+      <defaults>
+        <default field="ba_code" expression=""/>
+        <default field="ba_codeext" expression=""/>
+        <default field="ba_etiquet" expression=""/>
+        <default field="ba_lt_code" expression=""/>
+        <default field="ba_prop" expression=""/>
+        <default field="ba_gest" expression=""/>
+        <default field="ba_user" expression=""/>
+        <default field="ba_proptyp" expression=""/>
+        <default field="ba_statut" expression=""/>
+        <default field="ba_etat" expression=""/>
+        <default field="ba_rf_code" expression=""/>
+        <default field="ba_type" expression=""/>
+        <default field="ba_nb_u" expression=""/>
+        <default field="ba_haut" expression=""/>
+        <default field="ba_larg" expression=""/>
+        <default field="ba_prof" expression=""/>
+        <default field="ba_comment" expression=""/>
+        <default field="ba_creadat" expression=""/>
+        <default field="ba_majdate" expression=""/>
+        <default field="ba_majsrc" expression=""/>
+        <default field="ba_abddate" expression=""/>
+        <default field="ba_abdsrc" expression=""/>
+        <default field="et_code" expression=""/>
+        <default field="et_codeext" expression=""/>
+        <default field="et_etiquet" expression=""/>
+        <default field="et_ba_code" expression=""/>
+        <default field="et_prop" expression=""/>
+        <default field="et_etat" expression=""/>
+        <default field="et_type" expression=""/>
+        <default field="et_rf_code" expression=""/>
+        <default field="et_dateins" expression=""/>
+        <default field="et_datemes" expression=""/>
+        <default field="et_taille" expression=""/>
+        <default field="et_placemt" expression=""/>
+        <default field="et_localis" expression=""/>
+        <default field="et_comment" expression=""/>
+        <default field="et_creadat" expression=""/>
+        <default field="et_majdate" expression=""/>
+        <default field="et_majsrc" expression=""/>
+        <default field="et_abddate" expression=""/>
+        <default field="et_absrc" expression=""/>
+      </defaults>
+      <previewExpression>COALESCE("et_code", '&lt;NULL>')</previewExpression>
+    </maplayer>
+    <maplayer minimumScale="0" maximumScale="1e+08" readOnly="0" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
+      <id>v_obj_ps20180312145442030</id>
+      <datasource>dbname='gracethd20ct' host=localhost port=5432 user='postgres' sslmode=disable key='ps_code' table="gracethd"."v_obj_ps" sql=</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>Plans de boites (v_obj_ps)</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+          <srsid>3452</srsid>
+          <srid>4326</srid>
+          <authid>EPSG:4326</authid>
+          <description>WGS 84</description>
+          <projectionacronym>longlat</projectionacronym>
+          <ellipsoidacronym>WGS84</ellipsoidacronym>
+          <geographicflag>true</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <customproperties>
+        <property key="embeddedWidgets/count" value="0"/>
+        <property key="variableNames"/>
+        <property key="variableValues"/>
+      </customproperties>
+      <provider encoding="UTF-8">postgres</provider>
+      <vectorjoins/>
+      <layerDependencies/>
+      <expressionfields/>
+      <map-layer-style-manager current="">
+        <map-layer-style name=""/>
+      </map-layer-style-manager>
+      <edittypes>
+        <edittype widgetv2type="TextEdit" name="ps_code">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="ps_ti_code">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="bp_code">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="ps_cs_code">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="cb1_code">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="fo1_nincab">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="fo1_numtub">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="fo1_reper">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="fo1_nintub">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="Color" name="fo1_color">
+          <widgetv2config fieldEditable="1" constraint="" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="ps_1">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="ps_2">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="fo2_color">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="fo2_nintub">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="fo2_reper">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="fo2_numtub">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="fo2_nincab">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="cb2_code">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="ps_type">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="ps_fonct">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="ps_etat">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="ps_preaff">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="ps_comment">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="ps_creadat">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="ps_majdate">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="ps_majsrc">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="ps_abddate">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="ps_abdsrc">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+      </edittypes>
+      <annotationform></annotationform>
+      <aliases>
+        <alias field="ps_code" index="0" name=""/>
+        <alias field="ps_ti_code" index="1" name=""/>
+        <alias field="bp_code" index="2" name=""/>
+        <alias field="ps_cs_code" index="3" name=""/>
+        <alias field="cb1_code" index="4" name=""/>
+        <alias field="fo1_nincab" index="5" name=""/>
+        <alias field="fo1_numtub" index="6" name=""/>
+        <alias field="fo1_reper" index="7" name=""/>
+        <alias field="fo1_nintub" index="8" name=""/>
+        <alias field="fo1_color" index="9" name=""/>
+        <alias field="ps_1" index="10" name=""/>
+        <alias field="ps_2" index="11" name=""/>
+        <alias field="fo2_color" index="12" name=""/>
+        <alias field="fo2_nintub" index="13" name=""/>
+        <alias field="fo2_reper" index="14" name=""/>
+        <alias field="fo2_numtub" index="15" name=""/>
+        <alias field="fo2_nincab" index="16" name=""/>
+        <alias field="cb2_code" index="17" name=""/>
+        <alias field="ps_type" index="18" name=""/>
+        <alias field="ps_fonct" index="19" name=""/>
+        <alias field="ps_etat" index="20" name=""/>
+        <alias field="ps_preaff" index="21" name=""/>
+        <alias field="ps_comment" index="22" name=""/>
+        <alias field="ps_creadat" index="23" name=""/>
+        <alias field="ps_majdate" index="24" name=""/>
+        <alias field="ps_majsrc" index="25" name=""/>
+        <alias field="ps_abddate" index="26" name=""/>
+        <alias field="ps_abdsrc" index="27" name=""/>
+      </aliases>
+      <excludeAttributesWMS/>
+      <excludeAttributesWFS/>
+      <attributeactions default="-1"/>
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="1551796960">
+        <columns>
+          <column width="144" hidden="0" type="field" name="ps_code"/>
+          <column width="-1" hidden="0" type="field" name="ps_ti_code"/>
+          <column width="-1" hidden="0" type="field" name="bp_code"/>
+          <column width="154" hidden="0" type="field" name="ps_cs_code"/>
+          <column width="142" hidden="0" type="field" name="cb1_code"/>
+          <column width="-1" hidden="0" type="field" name="fo1_nincab"/>
+          <column width="-1" hidden="0" type="field" name="fo1_numtub"/>
+          <column width="-1" hidden="0" type="field" name="fo1_reper"/>
+          <column width="-1" hidden="0" type="field" name="fo1_nintub"/>
+          <column width="-1" hidden="0" type="field" name="fo1_color"/>
+          <column width="136" hidden="0" type="field" name="ps_1"/>
+          <column width="132" hidden="0" type="field" name="ps_2"/>
+          <column width="-1" hidden="0" type="field" name="fo2_color"/>
+          <column width="-1" hidden="0" type="field" name="fo2_nintub"/>
+          <column width="-1" hidden="0" type="field" name="fo2_reper"/>
+          <column width="-1" hidden="0" type="field" name="fo2_numtub"/>
+          <column width="-1" hidden="0" type="field" name="fo2_nincab"/>
+          <column width="-1" hidden="0" type="field" name="cb2_code"/>
+          <column width="-1" hidden="0" type="field" name="ps_type"/>
+          <column width="-1" hidden="0" type="field" name="ps_fonct"/>
+          <column width="-1" hidden="0" type="field" name="ps_etat"/>
+          <column width="-1" hidden="0" type="field" name="ps_preaff"/>
+          <column width="-1" hidden="0" type="field" name="ps_comment"/>
+          <column width="-1" hidden="0" type="field" name="ps_creadat"/>
+          <column width="-1" hidden="0" type="field" name="ps_majdate"/>
+          <column width="-1" hidden="0" type="field" name="ps_majsrc"/>
+          <column width="-1" hidden="0" type="field" name="ps_abddate"/>
+          <column width="-1" hidden="0" type="field" name="ps_abdsrc"/>
+          <column width="-1" hidden="1" type="actions"/>
+        </columns>
+      </attributetableconfig>
+      <editform></editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath></editforminitfilepath>
+      <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
+"""
+Les formulaires QGIS peuvent avoir une fonction Python qui sera appelée à l'ouverture du formulaire.
+
+Utilisez cette fonction pour ajouter plus de fonctionnalités à vos formulaires.
+
+Entrez le nom de la fonction dans le champ "Fonction d'initialisation Python".
+Voici un exemple à suivre:
+"""
+from qgis.PyQt.QtWidgets import QWidget
+
+def my_form_open(dialog, layer, feature):
+    geom = feature.geometry()
+    control = dialog.findChild(QWidget, "MyLineEdit")
+
+]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <widgets/>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles>
+          <fieldstyle fieldname="fo1_color">
+            <style background_color="#ff0000" rule="@value ='1'" name="fo1_color_1" text_color="#ffffff">
+              <font description="MS Shell Dlg 2,7.8,-1,5,50,0,0,0,0,0" style=""/>
+            </style>
+            <style background_color="#0070c0" rule="@value ='2'" name="fo1_color_2" text_color="#ffffff">
+              <font description="MS Shell Dlg 2,7.8,-1,5,50,0,0,0,0,0" style=""/>
+            </style>
+            <style background_color="#92d050" rule="@value ='3'" name="fo1_color_3" text_color="#000000">
+              <font description="MS Shell Dlg 2,7.8,-1,5,50,0,0,0,0,0" style=""/>
+            </style>
+            <style background_color="#ffff00" rule="@value ='4'" name="fo1_color_4" text_color="#000000">
+              <font description="MS Shell Dlg 2,7.8,-1,5,50,0,0,0,0,0" style=""/>
+            </style>
+            <style background_color="#7638a3" rule="@value ='5'" name="fo1_color_5" text_color="#ffffff">
+              <font description="MS Shell Dlg 2,7.8,-1,5,50,0,0,0,0,0" style=""/>
+            </style>
+            <style background_color="#ffffff" rule="@value ='6'" name="fo1_color_6" text_color="#000000">
+              <font description="MS Shell Dlg 2,7.8,-1,5,50,0,0,0,0,0" style=""/>
+            </style>
+            <style background_color="#ffc000" rule="@value ='7'" name="fo1_color_7" text_color="#000000">
+              <font description="MS Shell Dlg 2,7.8,-1,5,50,0,0,0,0,0" style=""/>
+            </style>
+            <style background_color="#c1c1c1" rule="@value = '8'" name="fo1_color_8" text_color="#000000">
+              <font description="MS Shell Dlg 2,7.8,-1,5,50,0,0,0,0,0" style=""/>
+            </style>
+            <style background_color="#993300" rule="@value = '9'" name="fo1_color_9" text_color="#ffffff">
+              <font description="MS Shell Dlg 2,7.8,-1,5,50,0,0,0,0,0" style=""/>
+            </style>
+            <style background_color="#000000" rule="@value ='10'" name="fo1_color_10" text_color="#ffffff">
+              <font description="MS Shell Dlg 2,7.8,-1,5,50,0,0,0,0,0" style=""/>
+            </style>
+            <style background_color="#00b0f0" rule="@value = '11'" name="fo1_color_11" text_color="#ffffff">
+              <font description="MS Shell Dlg 2,7.8,-1,5,50,0,0,0,0,0" style=""/>
+            </style>
+            <style background_color="#ff65cc" rule="@value = '12'" name="fo1_color_12" text_color="#ffffff">
+              <font description="MS Shell Dlg 2,7.8,-1,5,50,0,0,0,0,0" style=""/>
+            </style>
+          </fieldstyle>
+          <fieldstyle fieldname="fo1_reper">
+            <style background_color="#ff0000" rule="@value ='1.1'" name="fo1_reper_1.1" text_color="#ffffff">
+              <font description="MS Shell Dlg 2,7.8,-1,5,50,0,0,0,0,0" style=""/>
+            </style>
+            <style background_color="#0070c0" rule="@value ='1.2'" name="fo_reper1_1.2" text_color="#ffffff">
+              <font description="MS Shell Dlg 2,7.8,-1,5,50,0,0,0,0,0" style=""/>
+            </style>
+          </fieldstyle>
+        </fieldstyles>
+      </conditionalstyles>
+      <defaults>
+        <default field="ps_code" expression=""/>
+        <default field="ps_ti_code" expression=""/>
+        <default field="bp_code" expression=""/>
+        <default field="ps_cs_code" expression=""/>
+        <default field="cb1_code" expression=""/>
+        <default field="fo1_nincab" expression=""/>
+        <default field="fo1_numtub" expression=""/>
+        <default field="fo1_reper" expression=""/>
+        <default field="fo1_nintub" expression=""/>
+        <default field="fo1_color" expression="CASE WHEN '1' THEN  color_rgb( 255,0,0) END"/>
+        <default field="ps_1" expression=""/>
+        <default field="ps_2" expression=""/>
+        <default field="fo2_color" expression=""/>
+        <default field="fo2_nintub" expression=""/>
+        <default field="fo2_reper" expression=""/>
+        <default field="fo2_numtub" expression=""/>
+        <default field="fo2_nincab" expression=""/>
+        <default field="cb2_code" expression=""/>
+        <default field="ps_type" expression=""/>
+        <default field="ps_fonct" expression=""/>
+        <default field="ps_etat" expression=""/>
+        <default field="ps_preaff" expression=""/>
+        <default field="ps_comment" expression=""/>
+        <default field="ps_creadat" expression=""/>
+        <default field="ps_majdate" expression=""/>
+        <default field="ps_majsrc" expression=""/>
+        <default field="ps_abddate" expression=""/>
+        <default field="ps_abdsrc" expression=""/>
+      </defaults>
+      <previewExpression>COALESCE("ps_code", '&lt;NULL>')</previewExpression>
+    </maplayer>
+  </maplayers>
+</qlr>

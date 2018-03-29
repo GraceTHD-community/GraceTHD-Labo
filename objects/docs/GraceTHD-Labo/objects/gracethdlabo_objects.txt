@@ -1,0 +1,20 @@
+GraceTHD-Labo/Objects
+
+Fonctionnement : 
+
+Vous pouvez exécuter ce script SQL ou insérer le contenu de ce fichier dans le fichier .\sql_postgis\gracethd_90_labo.sql de votre GraceTHD-Check afin qu'il soit exécuté par GraceTHD-Check. 
+
+Plusieurs vues seront créées. 
+* vs_obj_it : Génération d'"itinéraires" (entre cm_ndcode1 et nd_code2 agrégations Linestrings si la topologie est propre, sinon multilinestrings). 
+* v_obj_it_cm : Relations "itinéraires" calculés / cheminements. 
+* vs_obj_cd : Génération de conduites (Linestrings si la topologie est propre, sinon multilinestrings. 
+* vs_in_1_cm0cd : Indicateur : Les cheminements qui n'ont pas de conduites. 
+* v_obj_ps : Les plans de boites (et de tiroirs). 
+* v_obj_ba : Plan de baie. 
+
+
+Evolution : 
+
+Pour l'instant il s'agit de prototypes pour illustrer certaines possibilités. S'il y a un intérêt pour ces vues objets, il serait envisageable de les sortir de GraceTHD-Labo pour les intégrer par exemple dans GraceTHD-Check, voire directement dans GraceTHD-MCD et donc d'en faire une partie du standard. 
+
+Chacune de ces vues peut probablement être améliorée. D'autres vues objets seraient utiles. Le but est d'inciter la communauté à contribuer au développement de ces vues objets. 
