@@ -5,6 +5,9 @@ http://gracethd.org
 
 **Attention, les élements contenus ici sont expérimentaux, destinés à des utilisateurs qui ont la capacité d'analyser et de contribuer au code. N'utilisez cela que si vous savez ce que vous faites !**
 
+Ce dépôt est hors Géostandard ANT (donc hors du process de développement et de validation), il est donc possible de contribuer directement par un simple pull request. 
+https://git-scm.com/book/fr/v2/GitHub-Contribution-%C3%A0-un-projet
+
 ## Fonctionnement : 
 Un dossier par projet d'extension du modèle de données. Exemple "Enedis". Le niveau 2 de l'arborescence doit être compatible avec l'arborescence GraceTHD-Check. Chaque sous-projet GraceTHD-Labo doit comporter un dossier ./docs/GraceTHD-Labo/[sous-projet]/ et une rapide documentation de ce sous-projet. 
 
