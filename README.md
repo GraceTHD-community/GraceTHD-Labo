@@ -2,7 +2,7 @@
 
 Destiné à accueillir des projets d'extension de GraceTHD-MCD. 
 
-Attention, les élements contenus ici sont expérimentaux, destinés à des utilisateurs avancés qui ont la capacité d'anlayser et de contribuer au code.
+**Attention, les élements contenus ici sont expérimentaux, destinés à des utilisateurs qui ont la capacité d'anlayser et de contribuer au code. N'utilisez cela que si vous savez ce que vous faites !**
 
 ## Fonctionnement : 
 Un dossier par projet d'extension du modèle de données. Exemple "Enedis". Le niveau 2 de l'arborescence doit être compatible avec l'arborescence GraceTHD-Check. Chaque sous-projet GraceTHD-Labo doit comporter un dossier ./docs/GraceTHD-Labo/[sous-projet]/ et une rapide documentation de ce sous-projet. 
