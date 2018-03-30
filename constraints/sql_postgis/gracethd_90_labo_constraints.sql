@@ -4,7 +4,7 @@
 stephane dot byache at aleno dot eu
 Rémi Desgrange
 */
-/* Rev. date : 21/02/2018 */
+/* Rev. date : 30/03/2018 */
 
 /* ********************************************************************
     This file is part of GraceTHD.
@@ -33,7 +33,7 @@ Possibilité de coller le contenu de ce script dans votre fichier .\sql_postgis\
 */
 
 /*Conception : 
-https://redmine.gracethd.org/redmine/issues/429
+https://redmine.gracethd.org/redmine/issues/431
 */
 
 

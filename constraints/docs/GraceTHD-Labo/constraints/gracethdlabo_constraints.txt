@@ -1,0 +1,4 @@
+GraceTHD-Labo - Constraints
+
+Projet dédié à la production collaborative de contraintes optionnelles sur une base GraceTHD-MCD. 
+
