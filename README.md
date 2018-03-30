@@ -1,6 +1,7 @@
 # GraceTHD-Labo
 
 Destiné à accueillir des projets d'extension de GraceTHD-MCD. 
+http://gracethd.org
 
 **Attention, les élements contenus ici sont expérimentaux, destinés à des utilisateurs qui ont la capacité d'analyser et de contribuer au code. N'utilisez cela que si vous savez ce que vous faites !**
 
