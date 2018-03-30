@@ -17,18 +17,24 @@ Les fichiers SQL comportent des commentaires permettant de comprendre les usages
 
 ### Constraints
 Objectif : Permettre à la communauté de produire de manière collaborative des ajouts "optionnels" de contraintes sur une base GraceTHD-MCD. 
+
 Conception : 
 https://redmine.gracethd.org/redmine/issues/431
+
 Etat : initialisation. 
 
 ### Enedis
 Objectif : production de récolés Enedis à partir de données GraceTHD.
+
 Conception :
 https://redmine.gracethd.org/redmine/issues/429
+
 Etat : répond partiellement au besoin. Il semble que des différences entre les régions Enedis posent des limites. 
 
 ### Objects
 Objectif : partager des vues objets. 
+
 Conception : 
 https://redmine.gracethd.org/redmine/issues/432
+
 Etat : initialisé. Certains objets probablement exploitables. Exemples de vues objets : "itinéraires", conduites, plans de boite, plans de baie, ... 
