@@ -16,7 +16,7 @@ Les fichiers SQL comportent des commentaires permettant de comprendre les usages
 ## Les labos
 
 ### Constraints
-Objectif : Permettre à la communauté de produire de manière collaborative des ajouts "optionnels" de contraintes sur une base GraceTHD-MCD. 
+Objectif : Produire de manière collaborative des ajouts "optionnels" de contraintes sur une base GraceTHD-MCD. 
 
 Conception : 
 https://redmine.gracethd.org/redmine/issues/431
